@@ -3,9 +3,9 @@
 use App\Http\Controllers\BiodataController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('templet.master');
-});
+// Route::get('/', function () {
+//     return view('templet.master');
+// });
 
 Route::get('/biodata',[BiodataController::class,'index'])->name("biodata.index");
 Route::get('/biodata/create',[BiodataController::class,'create'])->name("biodata.create");
