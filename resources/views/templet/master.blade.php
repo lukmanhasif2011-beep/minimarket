@@ -77,16 +77,27 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="/produk" class="nav-link active">
                         produk
                     </a>
                 </li>
             </ul>
 
-            <button class="btn btn-light">
-                <i class="bi bi-box-arrow-right"></i>
-                Keluar
-            </button>
+
+
+
+
+                                    <a class="btn btn-light" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                                     <i class="bi bi-box-arrow-right"></i>
+                                        {{ __('keluar') }}
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+
 
         </div>
     </div>
