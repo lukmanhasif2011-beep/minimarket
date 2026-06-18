@@ -78,7 +78,19 @@
 
                 <li class="nav-item">
                     <a href="/produk" class="nav-link active">
-                        produk
+                        Produk
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="/user" class="nav-link active">
+                        User
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="/obat" class="nav-link active">
+                        Obat
                     </a>
                 </li>
             </ul>

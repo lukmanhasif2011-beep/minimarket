@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BiodataController;
+use App\Http\Controllers\ObatController;
 use App\Http\Controllers\ProdukController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Auth;
@@ -42,6 +43,13 @@ Route::post('/produk',[ProdukController::class,'store'])->name('produk.store');
 Route::get('/produk/{id}/edit',[ProdukController::class,'edit'])->name('produk.edit');
 Route::put('/produk/{id}',[ProdukController::class,'update'])->name('produk.update');
 Route::delete('/produk/{id}',[ProdukController::class,'destroy'])->name('produk.destroy');
+
+Route::get('/obat', [ObatController::class, 'index'])->name('obat.index');
+Route::get('/obat/create', [ObatController::class, 'create'])->name('obat.create');
+Route::post('/obat', [ObatController::class, 'store'])->name('obat.store');
+Route::get('/obat/{id}/edit', [ObatController::class, 'edit'])->name('obat.edit');
+Route::put('/obat/{id}', [ObatController::class, 'update'])->name('obat.update');
+Route::delete('/obat/{id}', [ObatController::class, 'destroy'])->name('obat.destroy');
 
 });
 

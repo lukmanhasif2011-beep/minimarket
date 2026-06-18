@@ -69,8 +69,8 @@ class RegisterController extends Controller
     }
 
 
-    public function showRegistrationForm()
-    {
-        abort(403, 'Registration is disabled.');
-    }
+    // public function showRegistrationForm()
+    // {
+    //     abort(403, 'Registration is disabled.');
+    // }
 }
